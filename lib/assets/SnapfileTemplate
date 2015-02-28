@@ -34,8 +34,9 @@ screenshots_path "./screenshots"
 
 # Custom Callbacks
 
-# setup_for_device_change do |device|
+# setup_for_device_change do |device, udid|
 #   puts "Preparing device: #{device}"
+#   system("xcrun simctl addphoto #{udid} ../photo-library-sample/1.jpg")
 # end
 
 # setup_for_language_change do |lang, device|
